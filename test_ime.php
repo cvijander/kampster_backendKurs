@@ -1,0 +1,5 @@
+<?php 
+
+$ime = "Patak Daca";
+
+?>
