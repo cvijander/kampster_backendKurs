@@ -15,7 +15,15 @@ if(isset($_GET['btnSubmit']))
 
     echo "Uspesno smo pokupili podatke iz formulara na serveru<br/>";
     echo "Podaci su <br> email:" .$_GET['email'] . "<br/>" . $_GET['password']."<br/>";
-    echo "Pol je " .$_GET['pol'];
+    echo "Pol je " .$_GET['pol']."<br/>";
+
+    if(isset($_GET['jezici']))
+    {
+        foreach($_GET['jezici'] as $jezik)
+        {
+             echo $jezik."<br/>";
+        }
+    }
 }
 
 ?>

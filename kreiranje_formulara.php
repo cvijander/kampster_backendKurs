@@ -27,7 +27,20 @@
                     zenski
                 </label>
             </div>
-            
+            <label for="pol">Posedujem znanje iz</label><br/>
+            <div class ="checkbox">
+                <label><input name="jezici[]" type="checkbox" value="HTML">HTML</label>
+            </div>
+            <div class="checkbox">
+                <label><input name="jezici[]" type="checkbox" value="PHP">PHP</label>
+            </div>
+            <div class="checkbox">
+                <label><input name="jezici[]"type="checkbox"value="SQL">SQL</label>
+            </div>
+            <div class="checkbox">
+                <label><input name="jezici[]" type="checkbox" value="CSS">CSS</label>
+            </div>
+
             <button type="submit" name="btnSubmit" class="btn btn-primary">Posalji formu</button>
         </form>
        </div>
