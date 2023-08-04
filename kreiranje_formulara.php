@@ -41,6 +41,25 @@
                 <label><input name="jezici[]" type="checkbox" value="CSS">CSS</label>
             </div>
 
+
+            <div class ="form-group">
+                <select class = "form-control" name="grad" id="grad">
+                    <option value="0" selected>Izaberi grad</option>
+                    <option value="Beograd">Beograd</option>
+                    <option value="Novi sad">Novi sad</option>
+                    <option value="Krusevac">Krusevac</option>
+                    <option value="Nis">Nis</option>
+                    <option value="Kraljevo">Kraljevo</option>
+
+                </select>
+            </div>
+            <?php
+             $ip_adresa   = $_SERVER["REMOTE_ADDR"];
+             $pretrazivac = getenv("HTTP_USER_AGENT");
+              ?>
+            <input type="hidden" name="skriveno" value="Neka skrivena vrednost">            
+            <input type="hidden" name="ip_adresa" value="<?= $ip_adresa ?>">
+             <input type="hidden" name="pretrazivac" value="<?= $pretrazivac ?>">
             <button type="submit" name="btnSubmit" class="btn btn-primary">Posalji formu</button>
         </form>
        </div>
